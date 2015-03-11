@@ -54,6 +54,7 @@ class Common(Configuration):
 
         '{{ cookiecutter.repo_name }}.base',
         '{{ cookiecutter.repo_name }}.pages',
+        '{{ cookiecutter.repo_name }}.users',
 
         'django_extensions',  # http://django-extensions.readthedocs.org/
         'rest_framework',  # http://www.django-rest-framework.org/
@@ -65,7 +66,7 @@ class Common(Configuration):
 
     # django.contrib.auth
     # --------------------------------------------------------------------------
-    # AUTH_USER_MODEL = 'users.User'
+    AUTH_USER_MODEL = 'users.User'
     AUTHENTICATION_BACKENDS = ("django.contrib.auth.backends.ModelBackend",)
 
     # rest_framework
